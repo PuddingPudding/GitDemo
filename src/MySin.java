@@ -1,6 +1,13 @@
 
 public class MySin 
 {
+	public static void main(String args[])
+	{
+		MySin mySin = new MySin();;
+		System.out.println(mySin.sin(Math.PI) );
+		System.out.println(mySin.sin(Math.PI/6));
+	}
+	
 	public static double sin(double input)
 	{
 		double output = input;
