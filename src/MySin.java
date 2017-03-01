@@ -3,7 +3,7 @@ public class MySin
 {
 	public static void main(String args[])
 	{
-		MySin mySin = new MySin();;
+		MySin mySin = new MySin();
 		System.out.println(mySin.sin(Math.PI) );
 		System.out.println(mySin.sin(Math.PI/6));
 	}
@@ -11,7 +11,7 @@ public class MySin
 	public static double sin(double input)
 	{
 		double output = input;
-		int change = -1;  //¥Î¨Ó±±¨î¨C¦¸ªºÅÜ¦]¡A²Ä¤@¦¸¬O´î¡A²Ä¤G¦¸¬O¥[¡A¥H¦¹Ãş±À
+		int change = -1;  //ç”¨ä¾†æ§åˆ¶æ¯æ¬¡çš„è®Šå› ï¼Œç¬¬ä¸€æ¬¡æ˜¯æ¸›ï¼Œç¬¬äºŒæ¬¡æ˜¯åŠ ï¼Œä»¥æ­¤é¡æ¨
 		for(int i = 1 ; i <= 10 ; i++)
 		{
 			output += change * (Math.pow(input, i*2+1) / factorial(i*2+1) );
@@ -22,7 +22,7 @@ public class MySin
 	
 	
 	/*
-	 * ¼Æ¾Çªº¶¥­¼; factorial(3) = 3*2*1
+	 * æ•¸å­¸çš„éšä¹˜; factorial(3) = 3*2*1
 	 */
 	public static double factorial(double s) 
 	{
